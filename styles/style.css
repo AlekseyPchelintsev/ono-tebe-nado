@@ -95,7 +95,7 @@ pixel perfect. Браузер Yandex юзал. */
   width: 100%;
   max-width: 1100px;
   height: 757px;
-  background-image: linear-gradient(rgb(158, 79, 27), rgb(135, 183, 63), rgb(53, 160, 149));
+  background-color: linear-gradient(rgb(158, 79, 27), rgb(135, 183, 63), rgb(53, 160, 149));
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
