@@ -1,6 +1,5 @@
-/* я извиняюсь за эту кровь из глаз -_-
-пытался подогнать всё под макет по 
-pixel perfect. Браузер Yandex юзал. */
+/* Пытался подогнать всё под макет по 
+pixel perfect. Использовал браузер Yandex chrome. */
 
 /* блок header */
 
@@ -309,7 +308,7 @@ pixel perfect. Браузер Yandex юзал. */
 }
 
 /* изображение центровал через margin в единицах em
-чтобы максимально подогнать под макет по pixel perfect */
+чтобы максимально подогнать под макет. */
 
 .about__logo-image {
   width: 148px;
@@ -340,7 +339,7 @@ pixel perfect. Браузер Yandex юзал. */
 }
 
 .about__text-first {
-  margin: 4.21em 5px 1.2em 0;
+  margin: 4.21em 0.11em 1.2em 0;
 }
 
 /* секция footer */
