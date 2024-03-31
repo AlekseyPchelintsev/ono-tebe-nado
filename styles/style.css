@@ -85,9 +85,9 @@ pixel perfect. Браузер Yandex юзал. */
   letter-spacing: 0.005em;
 }
 
-/* блок cover */
+/* блок main */
 
-/* фоновое изображение и оверлей (cover) */
+/* фоновое изображение и оверлей (main) */
 
 .cover {
   position: relative;
@@ -95,9 +95,9 @@ pixel perfect. Браузер Yandex юзал. */
   width: 100%;
   max-width: 1100px;
   height: 757px;
-  background-color: linear-gradient(rgb(158, 79, 27), rgb(135, 183, 63), rgb(53, 160, 149));
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -110,7 +110,7 @@ pixel perfect. Браузер Yandex юзал. */
   background-color: rgb(0 0 0/.6);
 }
 
-/* стили заголовока (cover) */
+/* стили заголовока (main) */
 
 .cover__title {
   z-index: 1;
@@ -162,7 +162,7 @@ pixel perfect. Браузер Yandex юзал. */
   letter-spacing: 0.6em;
 }
 
-/* подзаголовок и кнопка (cover) */
+/* подзаголовок и кнопка (main) */
 
 .cover__description {
   display: flex;
@@ -196,7 +196,7 @@ pixel perfect. Браузер Yandex юзал. */
   text-transform: uppercase;
 }
 
-/* секция с карточками (cover) */
+/* секция с карточками (lots) */
 
 .lots {
   display: flex;
@@ -207,12 +207,16 @@ pixel perfect. Браузер Yandex юзал. */
   margin: 11.2em auto 0;
 }
 
+/* заголовок (lots) */
+
 .lots__heading {
   margin: 0 0 0.67em 1em;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
+
+/* карточки (lots) */
 
 .lots__card-list {
   display: grid;
@@ -271,7 +275,7 @@ pixel perfect. Браузер Yandex юзал. */
   background-size: cover;
 }
 
-/* ссылка под карточками (cover) */
+/* ссылка под карточками (lots) */
 
 .lots__look-more-link {
   width: 100%;
