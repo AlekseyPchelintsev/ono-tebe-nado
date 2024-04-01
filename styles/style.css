@@ -16,7 +16,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
 }
 
 .header__link {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #000;
   text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
 }
 
 .contacts__link {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #000;
   text-decoration: none;
 }
 
@@ -64,19 +64,18 @@ pixel perfect. Использовал браузер Yandex chrome. */
 
 /* блок с контактными данными (header) */
 
-.header__address {
-  justify-self: flex-end;
+.address {
   max-width: 240px;
-  margin: 5px 25px 2px 0;
   font-size: 18px;
   font-style: normal;
   letter-spacing: 0.003em;
+  line-height: 24px;
+  padding: 0.03em 0 0 0;
 }
 
-.address {
-  padding: 0.08em 0 0 0;
-  line-height: 24px;
-  letter-spacing: 0.003em;
+.header__address {
+  justify-self: flex-end;
+  margin: 5px 25px 2px 0;
 }
 
 .contacts {
@@ -84,16 +83,16 @@ pixel perfect. Использовал браузер Yandex chrome. */
   letter-spacing: 0.005em;
 }
 
-/* блок main */
+/* блок cover */
 
-/* фоновое изображение и оверлей (main) */
+/* фоновое изображение и оверлей (cover) */
 
 .cover {
   position: relative;
   display: grid;
   width: 100%;
   max-width: 1100px;
-  height: 757px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -109,7 +108,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
   background-color: rgb(0 0 0/.6);
 }
 
-/* стили заголовока (main) */
+/* стили заголовока (cover) */
 
 .cover__title {
   z-index: 1;
@@ -119,7 +118,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
   width: 100%;
   min-width: 1000px;
   margin: 1.65em 0 0 0;
-  color: #FFFFFF;
+  color: #FFF;
   font-weight: 700;
   font-size: 100px;
   line-height: 113%;
@@ -145,23 +144,22 @@ pixel perfect. Использовал браузер Yandex chrome. */
   letter-spacing: 0.3em;
 }
 
-.aligned-text_center {
+.aligned-text-center {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  place-content: center;
   margin: 0 4.435em 0 3.36em;
-  padding: 0.06em 0 0 0;
+  padding: 0.042em 0 0 0;
   letter-spacing: 0.3em;
 }
 
-.aligned-text_right {
+.aligned-text-right {
   display: flex;
   justify-content: center;
   margin: 0 0.675em 0 6.33em;
   letter-spacing: 0.6em;
 }
 
-/* подзаголовок и кнопка (main) */
+/* подзаголовок и кнопка (cover) */
 
 .cover__description {
   display: flex;
@@ -173,7 +171,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
 
 .cover__description-text {
   z-index: 1;
-  color: #FFFFFF;
+  color: #FFF;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -186,8 +184,8 @@ pixel perfect. Использовал браузер Yandex chrome. */
   width: 256px;
   height: 51px;
   margin: 0 0 0.05em 0;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 1px solid #FFF;
+  color: #FFF;
   font-weight: 500;
   font-size: 22px;
   font-style: normal;
@@ -202,7 +200,6 @@ pixel perfect. Использовал браузер Yandex chrome. */
   flex-direction: column;
   width: 100%;
   max-width: 1052px;
-  height: 692px;
   margin: 11.2em auto 0;
 }
 
@@ -225,8 +222,11 @@ pixel perfect. Использовал браузер Yandex chrome. */
 
 .card-link {
   position: relative;
-  height: 563px;
+  min-height: 563px;
   text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .lots__card-list-item {
@@ -235,7 +235,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
   flex-grow: 1;
   justify-content: space-between;
   padding: 3.18em 2.5em 3em;
-  color: #FFFFFF;
+  color: #FFF;
   list-style: none;
 }
 
@@ -253,25 +253,16 @@ pixel perfect. Использовал браузер Yandex chrome. */
   line-height: 120%;
 }
 
-.card_type_film {
+.card-link_type-film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-.card_type_book {
+.card-link_type-book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-.card_type_picture {
+.card-link_type-picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 /* ссылка под карточками (lots) */
@@ -280,7 +271,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
   width: 100%;
   max-width: 192px;
   margin: 30px 40px 2px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
   font-size: 20px;
   text-decoration: none;
 }
@@ -292,8 +283,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
   grid-template-columns: 334px 1fr;
   width: 100%;
   max-width: 1052px;
-  height: 595px;
-  margin: 146px auto 0;
+  margin: 145px auto 0;
 }
 
 /* блок с логотипом (about) */
@@ -304,7 +294,7 @@ pixel perfect. Использовал браузер Yandex chrome. */
   height: 240px;
   margin: 2.17em 2.95em 0;
   border-radius: 50%;
-  background-color: black;
+  background-color: #000;
 }
 
 /* изображение центровал через margin в единицах em
@@ -319,27 +309,29 @@ pixel perfect. Использовал браузер Yandex chrome. */
 /* блок с текстом (about) */
 
 .about__column {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__title {
   display: inline-block;
-  margin: 136px 0 0 25px;
+  margin: 136px 0 100px 25px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
 
 .about__text {
-  margin: 0 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 }
 
-.about__text-first {
-  margin: 4.21em 0.11em 1.2em 0;
+.about__text-contet {
+  margin: 0 0.2em 0 1.25em;
 }
 
 /* секция footer */
@@ -350,22 +342,15 @@ pixel perfect. Использовал браузер Yandex chrome. */
   margin: 180px 50px 88px;
 }
 
-/* блок с адресом (footer) */
-
-.footer__address {
-  max-width: 240px;
-
-  font-size: 18px;
-  font-style: normal;
-  letter-spacing: 0.003em;
-}
+/* блок с адресом для секции footer переиспользуется
+из секции header */
 
 /* навигационный блок (footer) */
 
 .footer__menu {
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
 }
 
@@ -374,7 +359,7 @@ line-height: 21px;
 }
 
 .footer__menu-link {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
   text-decoration: none;
 }
 
